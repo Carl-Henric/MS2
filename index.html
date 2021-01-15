@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Coffee Guide</title>
+   <!-- Bootstrap css--> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+</head>
+<body>
+<div class="container">
+    <header> 
+        <h1>How to brew your perfect coffee</h1>
+        <h3>with Åre Kafferosteri</h3>
+    </header>
+
+    <section id="cup-selector">
+        <form>
+            <label for="cups">Make</label>
+                <select id="cups" name="cups">
+                    <option value="2 cups">2 cups</option>
+                    <option value="3 cups">3 cups</option>
+                    <option value="4 cups">4 cups</option>
+                    <option value="5 cups">5 cups</option>
+                    <option value="6 cups">6 cups</option>
+                </select>
+        </form>
+    </section>
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Pour Over</a></li>
+            <li><a href="#">Classic Brewer</a></li>
+            <li><a href="#">Aeropress</a></li>
+            
+        </ul>
+    </nav>
+    <section id="howto">
+        <div class="recipe pourover">
+            <ul>
+                <li><p>Insert the paper filter and rinse it through with hot water</p></li>
+                <li><p>Grind <span id="coffeeweight"></span>g coffee beans</p></li>
+                <li><p>Put the grounded beans in the moisted filter</p></li>
+                <li><p>Pour <span id="bloom"></span>g water over the grounds for 15 seconds.</p></li>
+                <li><p><span id="bloomcountdown"></span><button id="bloombutton">Start timer</button></p></li>
+                <li><p>Let it rest for 30 seconds. </p></li>
+                <li><p><span id="restcountdown"></span><button id="restbuttom">Start timer</button></p></li>
+                <li><p>Stir <span id="waterweight"></span>g water in circles util timer stops.</p></li>
+                <li><p><span id="watercountdown"></span><button id="waterbuttom">Start timer</button></p></li>
+                <li><p>Pour it up and enjoy your perfect coffee!</p></li>
+            </ul>
+        </div>
+    </section>
+</div>
+<footer>
+</footer>
+<!-- Bootstrap Js code -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

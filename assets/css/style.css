@@ -1,0 +1,17 @@
+.menu {
+ list-style-type: none;
+ text-align: center;
+display: inline;
+ font-size: 18px;
+ margin-right: 20px;
+
+}
+
+li {
+     list-style-type: none;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}
