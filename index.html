@@ -16,13 +16,13 @@
 
     <section id="cup-selector">
         <form>
-            <label for="cups">Make</label>
-                <select id="cups" name="cups">
-                    <option value="2 cups">2 cups</option>
-                    <option value="3 cups">3 cups</option>
-                    <option value="4 cups">4 cups</option>
-                    <option value="5 cups">5 cups</option>
-                    <option value="6 cups">6 cups</option>
+            <label for="cups">Make</label> <!-- Tips from https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options-->
+                <select id="change_cups">
+                    <option value="2">2 cups</option>
+                    <option value="3">3 cups</option>
+                    <option value="4" selected>4 cups</option>
+                    <option value="5">5 cups</option>
+                    <option value="6">6 cups</option>
                 </select>
         </form>
     </section>
@@ -38,7 +38,7 @@
         <div class="recipe pourover">
             <ul>
                 <li><p>Insert the paper filter and rinse it through with hot water</p></li>
-                <li><p>Grind <span id="coffeeweight"></span>g coffee beans</p></li>
+                <li><p>Grind <span id="coffeeweight"></span> g coffee beans</p></li>
                 <li><p>Put the grounded beans in the moisted filter</p></li>
                 <li><p>Pour <span id="bloom"></span>g water over the grounds for 15 seconds.</p></li>
                 <li><p><span id="bloomcountdown"></span><button id="bloombutton">Start timer</button></p></li>
@@ -53,6 +53,29 @@
 </div>
 <footer>
 </footer>
+<script>
+var menu = document.getElementById("change_cups");
+menu.addEventListener("change", xcups);
+
+document.getElementById("coffeeweight").innerHTML = xcups();
+document.getElementById("waterweight").innerHTML = xcups()*10;
+
+
+
+     function xcups(event) {
+        if (menu.value == "2") {
+            return "15"
+        } else if (menu.value == "3") {
+            return "22"
+        } else if (menu.value == "4") {
+            return "33"
+        } else if (menu.value == "5") {
+            return "44"
+        } else if (menu.value == "6") {
+            return "55"
+        }
+    }
+</script>
 <!-- Bootstrap Js code -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
