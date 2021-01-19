@@ -40,12 +40,12 @@
                 <li><p>Insert the paper filter and rinse it through with hot water</p></li>
                 <li><p>Grind <span id="coffeeweight"></span> g coffee beans</p></li>
                 <li><p>Put the grounded beans in the moisted filter</p></li>
-                <li><p>Pour <span id="bloom"></span>g water over the grounds for 15 seconds.</p></li>
-                <li><p><span id="bloomcountdown"></span><button id="bloombutton">Start timer</button></p></li>
+                <li><p>Pour <span id="bloom"></span> g water over the grounds for 15 seconds.</p></li>
+                <li><p><span id="bloomcountdown">15</span> <button id="bloombutton">Start timer</button></p></li>
                 <li><p>Let it rest for 30 seconds. </p></li>
-                <li><p><span id="restcountdown"></span><button id="restbuttom">Start timer</button></p></li>
-                <li><p>Stir <span id="waterweight"></span>g water in circles util timer stops.</p></li>
-                <li><p><span id="watercountdown"></span><button id="waterbuttom">Start timer</button></p></li>
+                <li><p><span id="restcountdown">30 </span> <button id="restbutton">Start timer</button></p></li>
+                <li><p>Stir <span id="waterweight"></span> g water in circles util timer stops.</p></li>
+                <li><p><span id="watercountdown">120</span> <button id="waterbutton">Start timer</button></p></li>
                 <li><p>Pour it up and enjoy your perfect coffee!</p></li>
             </ul>
         </div>
@@ -53,12 +53,74 @@
 </div>
 <footer>
 </footer>
+<!-- Help from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer-->
+<!--Bloom countdown script-->
 <script>
+document.getElementById("bloombutton").addEventListener("click", function(){
+    var timeLeft = 15;
+
+    downloadTimer = setInterval(function function1(){
+        document.getElementById("bloomcountdown").innerHTML = timeLeft ;
+
+        timeLeft -=1;
+         if(timeLeft <=4) {
+            document.getElementById("bloomcountdown").style.color = "red";
+        }
+        if(timeLeft <=0) {
+            clearInterval(downloadTimer);
+            document.getElementById("bloomcountdown").innerHTML = "Stop!"
+        }
+    }, 1000);
+    console.log(bloomcountdown);
+});
+</script>
+<!--Rest countdown script-->
+<script>
+document.getElementById("restbutton").addEventListener("click", function(){
+    var timeLeft = 30;
+
+    downloadTimer = setInterval(function function1(){
+        document.getElementById("restcountdown").innerHTML = timeLeft ;
+
+        timeLeft -=1;
+        if(timeLeft <=4) {
+            document.getElementById("restcountdown").style.color = "red";
+        }
+         if(timeLeft <=0) {
+            clearInterval(downloadTimer);
+            document.getElementById("restcountdown").innerHTML = "Done"
+        }
+    }, 1000);
+    console.log(bloomcountdown);
+});
+</script>
+<!--Stir countdown script-->
+<script>
+document.getElementById("waterbutton").addEventListener("click", function(){
+    var timeLeft = 120;
+
+    downloadTimer = setInterval(function function1(){
+        document.getElementById("watercountdown").innerHTML = timeLeft ;
+
+        timeLeft -=1;
+        if(timeLeft <=4) {
+            document.getElementById("watercountdown").style.color = "red";
+        }
+         if(timeLeft <=0) {
+            clearInterval(downloadTimer);
+            document.getElementById("watercountdown").innerHTML = "Done"
+        }
+    }, 1000);
+    console.log(watercountdown);
+});
+</script>
+<script> 
 var menu = document.getElementById("change_cups");
-menu.addEventListener("change", xcups);
+menu.addEventListener("change", xcups); 
 
 document.getElementById("coffeeweight").innerHTML = xcups();
-document.getElementById("waterweight").innerHTML = xcups()*10;
+document.getElementById("bloom").innerHTML = xcups();
+document.getElementById("waterweight").innerHTML = xcups()*10-xcups();
 
 
 
