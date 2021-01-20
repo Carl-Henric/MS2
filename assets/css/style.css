@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap,family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 .menu {
  list-style-type: none;
  text-align: center;
@@ -14,4 +17,44 @@ li {
 .container {
     margin: auto;
     text-align: center;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 30px;
+}
+
+button {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color:beige;
+}
+
+#cup-selector,
+#bloom,
+#watercountdown,
+#waterweight,
+#restcountdown,
+#coffeeweight,
+#bloomcountdown {
+  font-family: 'Bungee Shade', cursive;
+    font-size: 18px;  
+}
+
+#change_cups {
+    background-color: chartreuse;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#change_cups:hover {
+   background-color:cyan; 
+} 
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
