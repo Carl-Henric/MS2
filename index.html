@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Coffee Guide</title>
-        <link rel="icon" type="image/svg" href="assets/images/mug-hot-solid.svg"/>
-
+    <link rel="icon" type="image/svg" href="assets/images/mug-hot-solid.svg"/>
    <!-- Bootstrap css--> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
 <div class="container">
@@ -55,91 +55,6 @@
 </div>
 <footer>
 </footer>
-<!-- Help from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer-->
-<!--Bloom countdown script-->
-<script>
-document.getElementById("bloombutton").addEventListener("click", function(){
-    var timeLeft = 15;
-
-    downloadTimer = setInterval(function function1(){
-        document.getElementById("bloomcountdown").innerHTML = timeLeft ;
-
-        timeLeft -=1;
-         if(timeLeft <=4) {
-            document.getElementById("bloomcountdown").style.color = "red";
-        }
-        if(timeLeft <=0) {
-            clearInterval(downloadTimer);
-            document.getElementById("bloomcountdown").innerHTML = "Stop!"
-        }
-    }, 1000);
-    console.log(bloomcountdown);
-});
-</script>
-<!--Rest countdown script-->
-<script>
-document.getElementById("restbutton").addEventListener("click", function(){
-    var timeLeft = 30;
-
-    downloadTimer = setInterval(function function1(){
-        document.getElementById("restcountdown").innerHTML = timeLeft ;
-
-        timeLeft -=1;
-        if(timeLeft <=4) {
-            document.getElementById("restcountdown").style.color = "red";
-        }
-         if(timeLeft <=0) {
-            clearInterval(downloadTimer);
-            document.getElementById("restcountdown").innerHTML = "Done"
-        }
-    }, 1000);
-    console.log(bloomcountdown);
-});
-</script>
-<!--Stir countdown script-->
-<script>
-document.getElementById("waterbutton").addEventListener("click", function(){
-    var timeLeft = 120;
-
-    downloadTimer = setInterval(function function1(){
-        document.getElementById("watercountdown").innerHTML = timeLeft ;
-
-        timeLeft -=1;
-        if(timeLeft <=4) {
-            document.getElementById("watercountdown").style.color = "red";
-        }
-         if(timeLeft <=0) {
-            clearInterval(downloadTimer);
-            document.getElementById("watercountdown").innerHTML = "Done"
-        }
-    }, 1000);
-    console.log(watercountdown);
-});
-</script>
-<script> 
-var menu = document.getElementById("change_cups");
-menu.addEventListener("change", xcups); 
-
-document.getElementById("coffeeweight").innerHTML = xcups();
-document.getElementById("bloom").innerHTML = xcups();
-document.getElementById("waterweight").innerHTML = xcups()*10-xcups();
-
-
-
-     function xcups(event) {
-        if (menu.value == "2") {
-            return "15"
-        } else if (menu.value == "3") {
-            return "22"
-        } else if (menu.value == "4") {
-            return "33"
-        } else if (menu.value == "5") {
-            return "44"
-        } else if (menu.value == "6") {
-            return "55"
-        }
-    }
-</script>
 <!-- Bootstrap Js code -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
