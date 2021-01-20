@@ -12,6 +12,16 @@ display: inline;
 
 li {
      list-style-type: none;
+     display: inline;
+}
+
+li a{
+     color: maroon;
+}
+
+li a:hover{
+     color: orangered;
+     padding: 5px;
 }
 
 .container {
@@ -19,10 +29,6 @@ li {
     text-align: center;
 }
 
-h1 {
-    font-family: 'Bungee Shade', cursive;
-    font-size: 30px;
-}
 
 button {
     font-family: 'Bungee Shade', cursive;
@@ -54,7 +60,22 @@ button {
    background-color:cyan; 
 } 
 
+/* Fonts */
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+}
+
+h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 20px;
+}
+
+.menu {
+   font-family: 'Bungee Shade', cursive; 
 }
