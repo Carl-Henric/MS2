@@ -62,23 +62,20 @@ document.getElementById("waterbutton").addEventListener("click", function(){
 });
 
 // Change cups
-
-
-
 var menu = document.getElementById("change_cups");
 menu.addEventListener("change", xcups); 
+menu.addEventListener("change", xwater);
 
 document.getElementById("coffeeweight").innerHTML = xcups();
 document.getElementById("bloom").innerHTML = xcups();
-document.getElementById("waterweight").innerHTML = xcups()*10-xcups();
 
 
 
     function xcups(event) {
-        let gramsofcoffee = 12;
+        let gramsofcoffee = 11.5;
 
         if (menu.value == "2") {
-        return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*2;
+        return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*2
         } else if (menu.value == "3") {
         return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*3;
         } else if (menu.value == "4") {
@@ -87,6 +84,22 @@ document.getElementById("waterweight").innerHTML = xcups()*10-xcups();
         return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*5;
         } else if (menu.value == "6") {
         return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*6;
+        }
+    }
+
+    function xwater(event) {
+        let gramsofwater = 175;
+
+        if (menu.value == "2") {
+        return document.getElementById("waterweight").innerHTML = gramsofwater*2;
+        } else if (menu.value == "3") {
+        return document.getElementById("waterweight").innerHTML = gramsofwater*3;
+        } else if (menu.value == "4") {
+        return document.getElementById("waterweight").innerHTML = gramsofwater*4;
+        } else if (menu.value == "5") {
+        return document.getElementById("waterweight").innerHTML = gramsofwater*5;
+        } else if (menu.value == "6") {
+        return document.getElementById("waterweight").innerHTML = gramsofwater*6;
         }
     }
 
