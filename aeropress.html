@@ -8,7 +8,7 @@
    <!-- Bootstrap css--> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <script type="text/javascript" src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/aeropressscript.js"></script>
 </head>
 <body>
 <div class="container">
@@ -31,28 +31,27 @@
             <label for="cups"></label> <!-- Tips from https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options-->
                 <select id="change_cups">
                     <option value="0" selected>Select number of cups</option>
-                    <option value="2">2 cups</option>
+                    <option value="2">1 Aeropress</option>
                 </select>
         </form>
     </section>
     
     <section id="howto">
         <div class="recipe">
-            <ol>
+            <ul>
                 <li><p>Place the Aeropress brewer on top of a cup.</p></li>
                 <li><p>Insert the paper filter and rinse it through with hot water</p></li>
-                <li><p>Grind <span id="coffeeweight">17</span> g coffee beans</p></li>
+                <li><p>Grind <span id="coffeeweight">0</span> g coffee beans</p></li>
                 <li><p>Put the grounded beans in the moisted filter in the Aeropress.</p></li>
-                <li><p>Pour <span id="bloom">50</span> g water.</p></li>
-                <li><p>Stir with a spoon.</p></li>
-                <li><p>Pour <span id="waterweight">200</span> g water over the coffee in 10 seconds.</p></li>
+                <li><p>Pour <span id="bloom">0</span> g water on the grounds and stir with a spoon.</p></li>
+                <li><p>Pour <span id="waterweight">0</span> g water over the coffee in 10 seconds.</p></li>
                 <li><p><span id="restcountdown">10</span> <button id="restbutton">Start timer</button></p></li>
                 <li><p>Stir with a spoon and place the plunge on top and press 1 cm. Wait 75 seconds</p></li>
                 <li><p><span id="bloomcountdown">75</span> <button id="bloombutton">Start timer </button></p></li>
                 <li><p>Stir with a spoon and press down the plunger for 30 seconds.</p></li>
                 <li><p><span id="watercountdown">30</span> <button id="waterbutton">Start timer </button></p></li>
                 <li><p>Pour it up and enjoy your perfect coffee!</p></li>
-            </ol>
+            </ul>
         </div>
     </section>
 </div>
