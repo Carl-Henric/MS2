@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap,family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     padding: 10px;
     background-color: bisque;
@@ -14,23 +20,26 @@ nav {
 }
 
 .menu {
- list-style-type: none;
- text-align: center;
-display: inline;
- font-size: 18px;
- margin-right: 20px;
- font-family: 'Bungee Shade', cursive; 
-   padding: 20px;
+    text-align: center;
+    display: inline;
+    font-size: 13px;
+    font-family: 'Bungee Shade', cursive; 
 
+}
+
+.menu a {
+    color: black;
 }
 
 li {
-     list-style-type: none;
      display: inline;
 }
 
-li a{
-     color: maroon;
+
+.menu li:hover {
+   border-bottom: 2px dashed turquoise;
+   padding-bottom: 5px;
+   color: black;
 }
 
 
@@ -91,13 +100,16 @@ h3 {
     font-size: 20px;
 }
 
-.menu {
-   font-family: 'Bungee Shade', cursive; 
-   padding: 20px;
+
+.recipe {
+    text-align: left;
+    padding: 0px 20px 20px 20px;
 }
 
-.menu li:hover {
-   border-bottom: 2px dashed turquoise;
-   padding-bottom: 5px;
-   color: black;
+#howto {
+ display: flex;
+ justify-content: center;
+ line-height: 15px;
 }
+
+ 
