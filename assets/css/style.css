@@ -19,6 +19,8 @@ nav {
 display: inline;
  font-size: 18px;
  margin-right: 20px;
+ font-family: 'Bungee Shade', cursive; 
+   padding: 20px;
 
 }
 
@@ -31,9 +33,6 @@ li a{
      color: maroon;
 }
 
-li a:hover{
-     color: orangered;
-}
 
 .container {
     margin: auto;
@@ -60,10 +59,16 @@ button {
     font-size: 18px;  
 }
 
+#cup-selector {
+    text-align: center;
+}
+
 #change_cups {
-    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     border: none;
     border-radius: 5px;
+    text-align: center;
 }
 
 #change_cups:hover {
@@ -88,4 +93,11 @@ h3 {
 
 .menu {
    font-family: 'Bungee Shade', cursive; 
+   padding: 20px;
+}
+
+.menu li:hover {
+   border-bottom: 2px dashed turquoise;
+   padding-bottom: 5px;
+   color: black;
 }

@@ -65,6 +65,7 @@ document.getElementById("waterbutton").addEventListener("click", function(){
 var menu = document.getElementById("change_cups");
 menu.addEventListener("change", xcups); 
 menu.addEventListener("change", xwater);
+menu.addEventListener("change", xbloom);
 
 // Ej nödvändig ? document.getElementById("coffeeweight").innerHTML = xcups();
 //document.getElementById("bloom").innerHTML = xcups();
@@ -72,7 +73,7 @@ menu.addEventListener("change", xwater);
 
 
     function xcups(event) {
-        let gramsofcoffee = 11.5;
+        let gramsofcoffee = 11;
 
         if (menu.value == "2") {
         return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*2
@@ -88,7 +89,7 @@ menu.addEventListener("change", xwater);
     }
 
     function xwater(event) {
-        let gramsofwater = 175;
+        let gramsofwater = 163;
 
         if (menu.value == "2") {
         return document.getElementById("waterweight").innerHTML = gramsofwater*2;
@@ -103,5 +104,21 @@ menu.addEventListener("change", xwater);
         }
     }
 
+    function xbloom(event) {
+        let gramsofbloom = 11;
 
+        if (menu.value == "2") {
+        return document.getElementById("bloom").innerHTML = gramsofbloom*2
+        } else if (menu.value == "3") {
+        return document.getElementById("bloom").innerHTML = gramsofbloom*3;
+        } else if (menu.value == "4") {
+        return document.getElementById("bloom").innerHTML = gramsofbloom*4;
+        } else if (menu.value == "5") {
+        return document.getElementById("bloom").innerHTML = gramsofbloom*5;
+        } else if (menu.value == "6") {
+        return document.getElementById("bloom").innerHTML = gramsofbloom*6;
+        }
+    }
+
+    
     }
