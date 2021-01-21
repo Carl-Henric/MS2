@@ -113,3 +113,29 @@ h3 {
 }
 
  
+/* Response */
+@media screen and (max-width: 600px) {
+    .menu {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+#cup-selector,
+#bloom,
+#watercountdown,
+#waterweight,
+#restcountdown,
+#coffeeweight,
+#bloomcountdown {
+  font-family: 'Bungee Shade', cursive;
+    font-size: 15px;  
+}
+
+button {
+    font-size: 15px;
+}
+
+}
