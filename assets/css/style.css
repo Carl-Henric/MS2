@@ -7,15 +7,21 @@
     padding: 0;
 }
 
+.container {
+    background-color: antiquewhite;
+    width: 100%;
+    margin: auto;
+}
+
 header {
     padding: 10px;
-    background-color: bisque;
+    background-color: aliceblue;
     width: 100%;
+    border-bottom: 12px double antiquewhite;
 }
 
 nav {
     padding: 10px;
-    background-color: cornsilk;
     width: 100%;
 }
 
@@ -78,11 +84,13 @@ button {
     border: none;
     border-radius: 5px;
     text-align: center;
+    background-color: transparent;
 }
 
 #change_cups:hover {
    background-color:cyan; 
 } 
+
 
 /* Fonts */
 p {
@@ -93,6 +101,14 @@ p {
 h1 {
     font-family: 'Bungee Shade', cursive;
     font-size: 30px;
+}
+
+h1 a {
+    color: black;
+}
+
+h1 a:hover {
+    color: black;
 }
 
 h3 {
@@ -112,8 +128,9 @@ h3 {
  line-height: 15px;
 }
 
- 
-/* Response */
+
+
+/* Responsive  ---------------------------------- */
 @media screen and (max-width: 600px) {
     .menu {
         font-size: 15px;
