@@ -6,18 +6,19 @@
     <title>Perfect Coffee Guide</title>
     <link rel="icon" type="image/svg" href="assets/images/mug-hot-solid.svg"/>
    <!-- Bootstrap css--> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
 <div class="container">
     <header> 
-        <h1>How to <br/>brew your <br>perfect coffee</h1>
+        <h1>How to <br/>brew your <br>perfect coffee </h1>
     </header>
     <nav>
         <ul class="menu">
             <li><h3>Choose your method:</h3></li>
-            <li><a href="#">V60</a></li>
+            <li><a href="#"><i class="fas fa-long-arrow-alt-right"></i> V60</a></li>
             <li><a href="#">Coffee maker</a></li>
             <li><a href="#">Aeropress</a></li>
             
@@ -26,9 +27,10 @@
 
     <section id="cup-selector">
         <form>
-            <label for="cups">Make</label> <!-- Tips from https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options-->
+            <label for="cups"></label> <!-- Tips from https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options-->
                 <select id="change_cups">
-                    <option value="2" selected>2 cups</option>
+                    <option value="0" selected>Select number of cups</option>
+                    <option value="2">2 cups</option>
                     <option value="3">3 cups</option>
                     <option value="4">4 cups</option>
                     <option value="5">5 cups</option>
@@ -41,14 +43,14 @@
         <div class="recipe pourover">
             <ul>
                 <li><p>Insert the paper filter and rinse it through with hot water</p></li>
-                <li><p>Grind <span id="coffeeweight"></span> g coffee beans</p></li>
+                <li><p>Grind <span id="coffeeweight">0</span> g coffee beans</p></li>
                 <li><p>Put the grounded beans in the moisted filter</p></li>
                 <li><p>Pour <span id="bloom"></span> g water over the grounds for 15 seconds.</p></li>
-                <li><p><span id="bloomcountdown">15</span> <button id="bloombutton">Start timer</button></p></li>
+                <li><p><span id="bloomcountdown"></span> <button id="bloombutton">Start timer</button></p></li>
                 <li><p>Let it rest for 30 seconds. </p></li>
-                <li><p><span id="restcountdown">30 </span> <button id="restbutton">Start timer</button></p></li>
-                <li><p>Stir <span id="waterweight">350</span> g water in circles util timer stops.</p></li>
-                <li><p><span id="watercountdown">120</span> <button id="waterbutton">Start timer</button></p></li>
+                <li><p><span id="restcountdown"></span> <button id="restbutton">Start timer</button></p></li>
+                <li><p>Stir <span id="waterweight">0</span> g water in circles util timer stops.</p></li>
+                <li><p><span id="watercountdown"></span> <button id="waterbutton">Start timer </button></p></li>
                 <li><p>Pour it up and enjoy your perfect coffee!</p></li>
             </ul>
         </div>

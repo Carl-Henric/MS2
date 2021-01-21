@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap,family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+header {
+    padding: 10px;
+    background-color: bisque;
+    width: 100%;
+}
+
+nav {
+    padding: 10px;
+    background-color: cornsilk;
+    width: 100%;
+}
+
 .menu {
  list-style-type: none;
  text-align: center;
@@ -21,7 +33,6 @@ li a{
 
 li a:hover{
      color: orangered;
-     padding: 5px;
 }
 
 .container {
@@ -50,7 +61,6 @@ button {
 }
 
 #change_cups {
-    background-color: chartreuse;
     padding: 10px;
     border: none;
     border-radius: 5px;

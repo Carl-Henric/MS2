@@ -12,9 +12,9 @@ document.getElementById("bloombutton").addEventListener("click", function(){
          if(timeLeft <=4) {
             document.getElementById("bloomcountdown").style.color = "red";
         }
-        if(timeLeft <=0) {
+        if(timeLeft <0) {
             clearInterval(downloadTimer);
-            document.getElementById("bloomcountdown").innerHTML = "Stop!"
+            document.getElementById("bloomcountdown").innerHTML = "Perfect!"
         }
     }, 1000);
     console.log(bloomcountdown);
@@ -33,7 +33,7 @@ document.getElementById("restbutton").addEventListener("click", function(){
         if(timeLeft <=4) {
             document.getElementById("restcountdown").style.color = "red";
         }
-         if(timeLeft <=0) {
+         if(timeLeft <0) {
             clearInterval(downloadTimer);
             document.getElementById("restcountdown").innerHTML = "Done"
         }
@@ -53,7 +53,7 @@ document.getElementById("waterbutton").addEventListener("click", function(){
         if(timeLeft <=4) {
             document.getElementById("watercountdown").style.color = "red";
         }
-         if(timeLeft <=0) {
+         if(timeLeft <0) {
             clearInterval(downloadTimer);
             document.getElementById("watercountdown").innerHTML = "Done"
         }
@@ -66,8 +66,8 @@ var menu = document.getElementById("change_cups");
 menu.addEventListener("change", xcups); 
 menu.addEventListener("change", xwater);
 
-document.getElementById("coffeeweight").innerHTML = xcups();
-document.getElementById("bloom").innerHTML = xcups();
+// Ej nödvändig ? document.getElementById("coffeeweight").innerHTML = xcups();
+//document.getElementById("bloom").innerHTML = xcups();
 
 
 
