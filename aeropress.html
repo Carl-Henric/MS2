@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Coffee Guide</title>
+    <link rel="icon" type="image/svg" href="assets/images/mug-hot-solid.svg"/>
+   <!-- Bootstrap css--> <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <header> 
+        <h1><a href="index.html">How to <br/>brew your <br>perfect coffee </a></h1>
+    </header>
+    <nav>
+        <h3>Choose your method:</h3>
+            <ul class="menu">
+                
+                <li><a href="/index.html">V60</a></li>
+                <li><a href="/coffeemaker.html">Coffee maker</a></li>
+                <li><a href="/aeropress"><i class="fas fa-long-arrow-alt-right"></i> Aeropress</a></li>
+                
+            </ul>
+    </nav>
+
+    <section id="cup-selector">
+        <form>
+            <label for="cups"></label> <!-- Tips from https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options-->
+                <select id="change_cups">
+                    <option value="0" selected>Select number of cups</option>
+                    <option value="2">2 cups</option>
+                </select>
+        </form>
+    </section>
+    
+    <section id="howto">
+        <div class="recipe pourover">
+            <ul>
+                <li><p>Place the Aeropress brewer on top of a cup.</p></li>
+                <li><p>Insert the paper filter and rinse it through with hot water</p></li>
+                <li><p>Grind <span id="coffeeweight">17</span> g coffee beans</p></li>
+                <li><p>Put the grounded beans in the moisted filter in the Aeropress.</p></li>
+                <li><p>Pour <span id="bloom">50</span> g water.</p></li>
+                <li><p>Stir with a spoon.</p></li>
+                <li><p>Pour <span id="waterweight">200</span> g water over the coffee in 10 seconds.</p></li>
+                <li><p><span id="restcountdown">10</span> <button id="restbutton">Start timer</button></p></li>
+                <li><p>Stir with a spoon and place the plunge on top and press 1 cm. Wait 75 seconds</p></li>
+                <li><p><span id="bloomcountdown">75</span> <button id="bloombutton">Start timer </button></p></li>
+                <li><p>Stir with a spoon and press down the plunger for 30 seconds.</p></li>
+                <li><p><span id="watercountdown">30</span> <button id="waterbutton">Start timer </button></p></li>
+                <li><p>Pour it up and enjoy your perfect coffee!</p></li>
+            </ul>
+        </div>
+    </section>
+</div>
+<footer>
+</footer>
+<!-- Bootstrap Js code -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
