@@ -11,7 +11,6 @@
     <script type="text/javascript" src="assets/js/aeropressscript.js"></script>
 </head>
 <body>
-<div class="container">
     <header> 
         <h1><a href="index.html">How to <br/>brew your <br>perfect coffee </a></h1>
     </header>
@@ -30,7 +29,7 @@
         <form>
             <label for="cups"></label> <!-- Tips from https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options-->
                 <select id="change_cups">
-                    <option value="0" selected>Select number of cups</option>
+                    <option value="0" selected>Amount</option>
                     <option value="2">1 Aeropress</option>
                 </select>
         </form>
@@ -45,17 +44,26 @@
                 <li><p>Put the grounded beans in the moisted filter in the Aeropress.</p></li>
                 <li><p>Pour <span id="bloom">0</span> g water on the grounds and stir with a spoon.</p></li>
                 <li><p>Pour <span id="waterweight">0</span> g water over the coffee in 10 seconds.</p></li>
-                <li><p><span id="restcountdown">10</span> <button id="restbutton">Start timer</button></p></li>
+                <li><p><span id="restcountdown"></span> <button id="restbutton">Start timer</button></p></li>
                 <li><p>Stir with a spoon and place the plunge on top and press 1 cm. Wait 75 seconds</p></li>
-                <li><p><span id="bloomcountdown">75</span> <button id="bloombutton">Start timer </button></p></li>
+                <li><p><span id="bloomcountdown"></span> <button id="bloombutton">Start timer </button></p></li>
                 <li><p>Stir with a spoon and press down the plunger for 30 seconds.</p></li>
-                <li><p><span id="watercountdown">30</span> <button id="waterbutton">Start timer </button></p></li>
+                <li><p><span id="watercountdown"></span> <button id="waterbutton">Start timer </button></p></li>
                 <li><p>Pour it up and enjoy your perfect coffee!</p></li>
             </ul>
         </div>
     </section>
-</div>
 <footer>
+    <div class="newsletter">
+        <h3>Sign up for more coffee wisdom</h3><input type="text" name="newsletter">
+        <input type="submit" name="submit">
+    </div>
+    <div class="contact">
+        <p>
+            <a href="mailto:carlhenric.grip@gmail.com">Built by: Carl-Henric Grip</a>
+        </p>
+       
+    </div>
 </footer>
 <!-- Bootstrap Js code -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

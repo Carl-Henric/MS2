@@ -11,17 +11,18 @@
     <script type="text/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
-<div class="container">
+
     <header> 
-        <h1><a href="index.html">How to <br/>brew your <br>perfect coffee </a></h1>
+        <h1>
+            <a href="index.html">How to <br/>brew your <br>perfect coffee </a>
+        </h1>
     </header>
     <nav>
         <h3>Choose your method:</h3>
             <ul class="menu">
                 <li><a href="/index.html"><i class="fas fa-long-arrow-alt-right"></i> V60</a></li>
                 <li><a href="/coffeemaker.html">Coffee maker</a></li>
-                <li><a href="/aeropress.html">Aeropress</a></li>
-                
+                <li><a href="/aeropress.html">Aeropress</a></li>  
             </ul>
     </nav>
 
@@ -29,7 +30,7 @@
         <form>
             <label for="cups"></label> <!-- Tips from https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options-->
                 <select id="change_cups">
-                    <option value="0" selected>Select number of cups</option>
+                    <option value="0" selected>Amount</option>
                     <option value="2">2 cups</option>
                     <option value="3">3 cups</option>
                     <option value="4">4 cups</option>
@@ -55,8 +56,17 @@
             </ul>
         </div>
     </section>
-</div>
 <footer>
+    <div class="newsletter">
+        <h3>Sign up for more coffee wisdom</h3><input type="text" name="newsletter">
+        <input type="submit" name="submit">
+    </div>
+    <div class="contact">
+        <p>
+            <a href="mailto:carlhenric.grip@gmail.com">Built by: Carl-Henric Grip</a>
+        </p>
+       
+    </div>
 </footer>
 <!-- Bootstrap Js code -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
