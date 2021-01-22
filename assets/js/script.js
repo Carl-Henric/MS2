@@ -1,4 +1,4 @@
-//Help from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer-->
+//For start timer fucntion, help from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer-->
 // Bloom countdown script-->
 // When page is loaded Help from: https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null
 window.onload=function(){
@@ -14,7 +14,7 @@ document.getElementById("bloombutton").addEventListener("click", function(){
         }
         if(timeLeft <0) {
             clearInterval(downloadTimer);
-            document.getElementById("bloomcountdown").innerHTML = "Perfect!"
+            document.getElementById("bloomcountdown").innerHTML = "Perfect!";
         }
     }, 1000);
     console.log(bloomcountdown);
@@ -35,7 +35,7 @@ document.getElementById("restbutton").addEventListener("click", function(){
         }
          if(timeLeft <0) {
             clearInterval(downloadTimer);
-            document.getElementById("restcountdown").innerHTML = "Done"
+            document.getElementById("restcountdown").innerHTML = "Done";
         }
     }, 1000);
     console.log(bloomcountdown);
@@ -55,7 +55,7 @@ document.getElementById("waterbutton").addEventListener("click", function(){
         }
          if(timeLeft <0) {
             clearInterval(downloadTimer);
-            document.getElementById("watercountdown").innerHTML = "Done"
+            document.getElementById("watercountdown").innerHTML = "Done";
         }
     }, 1000);
     console.log(watercountdown);
@@ -67,16 +67,13 @@ menu.addEventListener("change", xcups);
 menu.addEventListener("change", xwater);
 menu.addEventListener("change", xbloom);
 
-// Ej nödvändig ? document.getElementById("coffeeweight").innerHTML = xcups();
-//document.getElementById("bloom").innerHTML = xcups();
-
 
 // Converts grams of coffe for each cup 
     function xcups(event) {
-        let gramsofcoffee = 11;
+        var gramsofcoffee = 11;
 
         if (menu.value == "2") {
-        return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*2
+        return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*2;
         } else if (menu.value == "3") {
         return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*3;
         } else if (menu.value == "4") {
@@ -85,12 +82,14 @@ menu.addEventListener("change", xbloom);
         return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*5;
         } else if (menu.value == "6") {
         return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*6;
+        } else if (menu.value == "0") {
+        return document.getElementById("coffeeweight").innerHTML = "0";
         }
     }
 // Converts grams of water for each cup
 
     function xwater(event) {
-        let gramsofwater = 163;
+        var gramsofwater = 163;
 
         if (menu.value == "2") {
         return document.getElementById("waterweight").innerHTML = gramsofwater*2;
@@ -102,16 +101,18 @@ menu.addEventListener("change", xbloom);
         return document.getElementById("waterweight").innerHTML = gramsofwater*5;
         } else if (menu.value == "6") {
         return document.getElementById("waterweight").innerHTML = gramsofwater*6;
+        } else if (menu.value == "0") {
+        return document.getElementById("waterweight").innerHTML = "0";
         }
     }
 
 // Converts grams of water to bloom for each cup
 
     function xbloom(event) {
-        let gramsofbloom = 11;
+        var gramsofbloom = 11;
 
         if (menu.value == "2") {
-        return document.getElementById("bloom").innerHTML = gramsofbloom*2
+        return document.getElementById("bloom").innerHTML = gramsofbloom*2;
         } else if (menu.value == "3") {
         return document.getElementById("bloom").innerHTML = gramsofbloom*3;
         } else if (menu.value == "4") {
@@ -120,25 +121,9 @@ menu.addEventListener("change", xbloom);
         return document.getElementById("bloom").innerHTML = gramsofbloom*5;
         } else if (menu.value == "6") {
         return document.getElementById("bloom").innerHTML = gramsofbloom*6;
-        }
-    }
-
-// Converts grams of coffe for each cup
-
-function xcups(event) {
-        let gramsofcoffee = 11;
-
-        if (menu.value == "2") {
-        return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*2
-        } else if (menu.value == "3") {
-        return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*3;
-        } else if (menu.value == "4") {
-        return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*4;
-        } else if (menu.value == "5") {
-        return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*5;
-        } else if (menu.value == "6") {
-        return document.getElementById("coffeeweight").innerHTML = gramsofcoffee*6;
+        } else if (menu.value == "0") {
+        return document.getElementById("bloom").innerHTML = "0";
         }
     }
     
-    }
+    };
