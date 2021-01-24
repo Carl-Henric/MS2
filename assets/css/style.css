@@ -1,3 +1,4 @@
+/* Google fonts ----------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap,family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
@@ -8,11 +9,51 @@
     padding: 0;
 }
 
+/* Sections ----------------------------------------- */
+
+header {
+    padding: 10px 5px 10px 5px;
+    background-color: white;
+    border-bottom: 12px double #F6F2E6;
+}
+
+body {
+    background-color:#F6F2E6;
+    margin: auto;
+    text-align: center;
+}
+
+nav {
+    padding: 20px 10px 20px 10px;
+    width: 100%;
+}
+
+.menu {
+    text-align: center;
+    display: inline;
+    font-size: 13px;
+    font-family: 'Bungee Shade', cursive;
+}
+
+.menu a {
+    color: black;
+}
+
+li {
+    display: inline;
+}
+
+.menu li:hover {
+    border-bottom: 2px dashed turquoise;
+    padding-bottom: 5px;
+    color: black;
+}
+
 footer {
-    background-color:aliceblue;
+    background-color:white;
     text-align: center;
     padding: 20px 5px 5px 0px;
-    border-top: 12px double antiquewhite;
+    border-top: 12px double #F6F2E6;
 }
 
 footer p {
@@ -25,55 +66,22 @@ footer a {
     color: black;
 }
 
-body {
-    background-color: antiquewhite;
-    margin: auto;
-    text-align: center;
-}
-
-header {
-    padding: 10px 5px 10px 5px;
-    background-color: aliceblue;
-    border-bottom: 12px double antiquewhite;
-}
-
-nav {
-    padding: 20px 10px 20px 10px;
-    width: 100%;
-}
-
-.menu {
-    text-align: center;
-    display: inline;
-    font-size: 13px;
-    font-family: 'Bungee Shade', cursive; 
-}
-
-.menu a {
-    color: black;
-}
-
-li {
-     display: inline;
-}
-
-
-.menu li:hover {
-   border-bottom: 2px dashed turquoise;
-   padding-bottom: 5px;
-   color: black;
-}
-
-
-
-
+/* Button ----------------------------------------- */
 
 button {
     font-family: 'Bungee Shade', cursive;
     font-size: 18px;
     border-radius: 10px;
     border: none;
-    background-color:beige;
+    background-color: beige;
+}
+
+/* Functions area  ----------------------------------------- */
+#howto {
+    justify-content: center;
+    line-height: 15px;
+    width: 400px;
+    margin: 0 auto;
 }
 
 #cup-selector,
@@ -83,8 +91,8 @@ button {
 #restcountdown,
 #coffeeweight,
 #bloomcountdown {
-  font-family: 'Bungee Shade', cursive;
-    font-size: 18px;  
+    font-family: 'Bungee Shade', cursive;
+    font-size: 18px;
 }
 
 #cup-selector {
@@ -99,11 +107,15 @@ button {
 }
 
 #change_cups:hover {
-   background-color:cyan; 
-} 
+    background-color: cyan;
+}
 
+.recipe {
+    text-align: left;
+    margin: 20px 20px 20px 20px;
+}
 
-/* Fonts */
+/* Fonts ----------------------------------------- */
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -127,23 +139,7 @@ h3 {
     font-size: 20px;
 }
 
-
-.recipe {
-    text-align: left;
-    margin: 20px 20px 20px 20px;
-}
-
-#howto {
- justify-content: center;
- line-height: 15px;
- width: 400px;
- margin: 0 auto;
-
-}
-
-
-
-/* Responsive  ---------------------------------- */
+/* Responsive  ----------------------------------------- */
 @media screen and (max-width: 600px) {
     .menu {
         font-size: 15px;
@@ -153,25 +149,26 @@ h3 {
         font-size: 20px;
     }
 
-#cup-selector {
-    font-size: 20px;
-}
-#bloom,
-#watercountdown,
-#waterweight,
-#restcountdown,
-#coffeeweight,
-#bloomcountdown {
-  font-family: 'Bungee Shade', cursive;
-    font-size: 15px; 
-}
+    #cup-selector {
+        font-size: 20px;
+    }
 
-button {
-    font-size: 1.1em;
-}
+    #bloom,
+    #watercountdown,
+    #waterweight,
+    #restcountdown,
+    #coffeeweight,
+    #bloomcountdown {
+        font-family: 'Bungee Shade', cursive;
+        font-size: 15px;
+    }
 
-#howto {
-    width: 100%;
-}
+    button {
+        font-size: 1.1em;
+    }
+
+    #howto {
+        width: 100%;
+    }
 
 }
