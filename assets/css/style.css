@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 
 
 * {
@@ -14,12 +17,12 @@
 
 header {
     padding: 10px 5px 10px 5px;
-    background-color: black;
-    /* border-bottom: 12px dashed white; */
+    background-color:skyblue;
+    
 }
 
 body {
-    background-color:lightyellow;
+    background-color:lightsalmon;
     margin: auto;
     text-align: center;
 }
@@ -27,20 +30,28 @@ body {
 nav {
     padding: 20px 10px 20px 10px;
     width: 100%;
+    
 }
 
 .menu {
     text-align: center;
     display: inline;
-    font-size: 13px;
-    font-family: 'Cherry Swash', cursive;
-    font-weight: 700;
-   /* font-family: 'Bungee Shade', cursive; */
+    font-size: 16px;
+    /* font-family: 'Cherry Swash', cursive;*/
+    /*font-weight: 700; */
+    /*font-family: 'Staatliches', cursive; */
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+
+   
 }
 
 .menu a {
-    color: black;
+   
+    color: white;
 }
+
+
 
 li {
     display: inline;
@@ -49,11 +60,11 @@ li {
 .menu li:hover {
     border-bottom: 2px dashed turquoise;
     padding-bottom: 5px;
-    color: black;
+    color: white;
 }
 
 footer {
-    background-color:black;
+    background-color:#ffb294;
     text-align: center;
     padding: 20px 5px 2px 0px;
     position: relative;
@@ -61,10 +72,11 @@ footer {
     left: 0;
     width: 100%;
     color: white;
+    
 }
 
 footer p {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Sedgwick Ave', cursive;   
     padding-top: 20px;
     font-size: 10px;
     color: white;
@@ -74,15 +86,21 @@ footer a {
     color: white;
 }
 
+footer h3 {
+    font-family: 'Sedgwick Ave', cursive;
+}
+
 /* Button ----------------------------------------- */
 
 button {
     /* font-family: 'Bungee Shade', cursive; */
     font-size: 18px;
-    border-radius: 10px;
+    border-radius: 20px;
     border: none;
-     font-family: 'Cherry Swash', cursive;
-    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color: transparent;
 }
 
 /* Functions area  ----------------------------------------- */
@@ -102,8 +120,11 @@ button {
 #bloomcountdown {
     /* font-family: 'Bungee Shade', cursive; */
     font-size: 18px;
-     font-family: 'Cherry Swash', cursive;
-    font-weight: 700;
+    /* font-family: 'Staatliches', cursive; */
+    /* font-weight: 700; */
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
 }
 
 #cup-selector {
@@ -115,6 +136,9 @@ button {
     border-radius: 5px;
     text-align: center;
     background-color: transparent;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
 }
 
 #change_cups:hover {
@@ -128,17 +152,15 @@ button {
 
 /* Fonts ----------------------------------------- */
 p {
-    /* font-family: 'Roboto', sans-serif; */
-    font-size: 14px;
-     font-family: 'Cherry Swash', cursive;
-    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: white;
 }
 
 h1 {
     /* font-family: 'Bungee Shade', cursive; */
     font-size: 40px;
-     font-family: 'Cherry Swash', cursive;
-    font-weight: 700;
+    font-family: 'Sedgwick Ave', cursive;
 }
 
 h1 a {
@@ -153,9 +175,9 @@ h1 a:hover {
 h3 {
     /* font-family: 'Bungee Shade', cursive; */
     font-size: 20px;
-    font-family: 'Cherry Swash', cursive;
-    font-weight: 700;
-    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    color: white;
 }
 
 /* Responsive  ----------------------------------------- */
@@ -180,8 +202,8 @@ h3 {
     #bloomcountdown {
         /* font-family: 'Bungee Shade', cursive; */
         font-size: 15px;
-         font-family: 'Cherry Swash', cursive;
-    font-weight: 700;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 900;
     }
 
     button {

@@ -17,7 +17,6 @@ window.onload = function() {
                 document.getElementById("bloomcountdown").innerHTML = "Perfect!";
             }
         }, 1000);
-        console.log(bloomcountdown);
     });
 
 
@@ -38,7 +37,6 @@ window.onload = function() {
                 document.getElementById("restcountdown").innerHTML = "Great!";
             }
         }, 1000);
-        console.log(restcountdown);
     });
 
 
@@ -58,7 +56,6 @@ window.onload = function() {
                 document.getElementById("watercountdown").innerHTML = "Finished!";
             }
         }, 1000);
-        console.log(watercountdown);
     });
 
     // Change cups for pour over
