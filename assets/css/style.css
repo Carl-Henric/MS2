@@ -1,5 +1,6 @@
 /* Google fonts ----------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap,family=Roboto:wght@500&display=swap');
+/*  @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap,family=Roboto:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
@@ -13,12 +14,12 @@
 
 header {
     padding: 10px 5px 10px 5px;
-    background-color: white;
-    border-bottom: 12px double #F6F2E6;
+    background-color: black;
+    /* border-bottom: 12px dashed white; */
 }
 
 body {
-    background-color:#F6F2E6;
+    background-color:lightyellow;
     margin: auto;
     text-align: center;
 }
@@ -32,7 +33,9 @@ nav {
     text-align: center;
     display: inline;
     font-size: 13px;
-    font-family: 'Bungee Shade', cursive;
+    font-family: 'Cherry Swash', cursive;
+    font-weight: 700;
+   /* font-family: 'Bungee Shade', cursive; */
 }
 
 .menu a {
@@ -50,30 +53,36 @@ li {
 }
 
 footer {
-    background-color:white;
+    background-color:black;
     text-align: center;
-    padding: 20px 5px 5px 0px;
-    border-top: 12px double #F6F2E6;
+    padding: 20px 5px 2px 0px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
 }
 
 footer p {
     font-family: 'Dancing Script', cursive;
     padding-top: 20px;
     font-size: 10px;
+    color: white;
 }
 
 footer a {
-    color: black;
+    color: white;
 }
 
 /* Button ----------------------------------------- */
 
 button {
-    font-family: 'Bungee Shade', cursive;
+    /* font-family: 'Bungee Shade', cursive; */
     font-size: 18px;
     border-radius: 10px;
     border: none;
-    background-color: beige;
+     font-family: 'Cherry Swash', cursive;
+    font-weight: 700;
 }
 
 /* Functions area  ----------------------------------------- */
@@ -91,8 +100,10 @@ button {
 #restcountdown,
 #coffeeweight,
 #bloomcountdown {
-    font-family: 'Bungee Shade', cursive;
+    /* font-family: 'Bungee Shade', cursive; */
     font-size: 18px;
+     font-family: 'Cherry Swash', cursive;
+    font-weight: 700;
 }
 
 #cup-selector {
@@ -117,26 +128,34 @@ button {
 
 /* Fonts ----------------------------------------- */
 p {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-size: 14px;
+     font-family: 'Cherry Swash', cursive;
+    font-weight: 400;
 }
 
 h1 {
-    font-family: 'Bungee Shade', cursive;
-    font-size: 30px;
+    /* font-family: 'Bungee Shade', cursive; */
+    font-size: 40px;
+     font-family: 'Cherry Swash', cursive;
+    font-weight: 700;
 }
 
 h1 a {
-    color: black;
+    color: white;
 }
 
 h1 a:hover {
-    color: black;
+    color: cyan;
+    text-decoration-line: none;
 }
 
 h3 {
-    font-family: 'Bungee Shade', cursive;
+    /* font-family: 'Bungee Shade', cursive; */
     font-size: 20px;
+    font-family: 'Cherry Swash', cursive;
+    font-weight: 700;
+    color: black;
 }
 
 /* Responsive  ----------------------------------------- */
@@ -159,8 +178,10 @@ h3 {
     #restcountdown,
     #coffeeweight,
     #bloomcountdown {
-        font-family: 'Bungee Shade', cursive;
+        /* font-family: 'Bungee Shade', cursive; */
         font-size: 15px;
+         font-family: 'Cherry Swash', cursive;
+    font-weight: 700;
     }
 
     button {
