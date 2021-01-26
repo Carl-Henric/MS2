@@ -1,9 +1,7 @@
 /* Google fonts ----------------------------------------- */
-/*  @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap,family=Roboto:wght@500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 
@@ -37,9 +35,6 @@ nav {
     text-align: center;
     display: inline;
     font-size: 16px;
-    /* font-family: 'Cherry Swash', cursive;*/
-    /*font-weight: 700; */
-    /*font-family: 'Staatliches', cursive; */
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
 
@@ -63,6 +58,14 @@ li {
     color: white;
 }
 
+#map {
+    min-height: 360px;
+}
+
+.googlemaps h3 {
+    font-family: 'Sedgwick Ave', cursive;
+}
+
 footer {
     background-color:#ffb294;
     text-align: center;
@@ -76,7 +79,7 @@ footer {
 }
 
 footer p {
-    font-family: 'Sedgwick Ave', cursive;   
+    font-family: 'Dancing Script', cursive;  
     padding-top: 20px;
     font-size: 10px;
     color: white;
@@ -111,6 +114,49 @@ button {
     margin: 0 auto;
 }
 
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-toggle:hover {
+    background-color: transparent;
+}
+
+
+.dropdown-menu.show {
+    background-color: #9D5E48;
+    border: 0.5px inset black;
+    border-radius: 5px;
+    color: rgb(8, 7, 7);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+
+}
+
+/* Solution for take away active color: https://stackoverflow.com/questions/49911051/how-to-change-button-active-color-in-bootstrap-4 */
+.btn-primary:not(:disabled):not(.disabled):focus{
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-menu a {
+    color: white;
+}
+
+.dropdown-menu li {
+    display: block;
+     text-align: center;
+     width: 230px;
+}
+
+.dropdown-toggle,
 #cup-selector,
 #bloom,
 #watercountdown,
@@ -118,10 +164,7 @@ button {
 #restcountdown,
 #coffeeweight,
 #bloomcountdown {
-    /* font-family: 'Bungee Shade', cursive; */
     font-size: 18px;
-    /* font-family: 'Staatliches', cursive; */
-    /* font-weight: 700; */
     color: white;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;

@@ -20,7 +20,20 @@
         </h1>
     </header>
 
-<!-- Navigation with different brewing methods   -->
+<!-- Dropdown method -->
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            <i class="fas fa-long-arrow-alt-right"></i> Choose your method 
+        <span class="caret"></span>
+        </button>
+            <ul class="dropdown-menu">
+                <li id="v60"><a href="index.html">V60</a></li>
+                <li id="coffeemaker"><a href="coffeemaker.html">Coffee maker</a></li>
+                <li id="aeropress"><a href="aeropress.html">Aeropress</a></li>
+            </ul>
+    </div>
+
+<!-- Navigation with different brewing methods  
     <nav>
         <h3>Choose your method:</h3>
         <ul class="menu">
@@ -29,7 +42,8 @@
             <li id="aeropress"><a href="aeropress.html">Aeropress</a></li>
         </ul>
     </nav>
-
+ -->
+ 
 <!-- Dropdown with the amount of cups   -->
     <section id="cup-selector">
         <!-- Tips from https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options-->
@@ -49,6 +63,9 @@
     <section id="howto">
         <div class="recipe">
             <ul>
+                <li>
+                    <h3>Method: V60</h3>
+                </li>
                 <li>
                     <p>Insert the paper filter and rinse it through with hot water.</p>
                 </li>
@@ -82,8 +99,11 @@
             </ul>
         </div>
     </section>
-    <section id="googlemaps">
-            <div id="map">
+
+<!-- Google maps   -->
+    <section class="googlemaps">
+        <h3>Best places to take a cup of coffee near Åre, Sweden.</h3>    
+        <div id="map">
 
             </div>
     </section>
@@ -101,34 +121,7 @@
 
         </div>
     </footer>
-    <script>
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 8, 
-                center: {
-                    lat: 63.398579,
-                    lng: 13.085930, 
-                }
-            });
-            var labels = "ABCDEFGHIJKLMNOPQRSTUVXZ";
-
-            var locations = [
-                {   lat: 63.4004457034588,lng: 13.078126126982276 },
-                {   lat: 63.17675839781368,lng: 14.639903869743152 },
-            ];
-
-            var markers = locations.map(function(location, i){
-                return new google.maps.Marker({
-                    position: location, 
-                    label: labels [i % labels.length],
-                });
-            });
-
-            var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-            
-        }
-    </script>
+    <script src="assets/js/maps.js"></script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMKzVpz_itm4xYB5Ot49JOfP6TBl-C_Oo&callback=initMap"></script>

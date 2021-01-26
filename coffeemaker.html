@@ -20,7 +20,20 @@
         </h1>
     </header>
 
-    <!-- Navigation with different brewing methods   -->
+    <!-- Dropdown method -->
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            <i class="fas fa-long-arrow-alt-right"></i> Choose your method 
+        <span class="caret"></span>
+        </button>
+            <ul class="dropdown-menu">
+                <li id="v60"><a href="index.html">V60</a></li>
+                <li id="coffeemaker"><a href="coffeemaker.html">Coffee maker</a></li>
+                <li id="aeropress"><a href="aeropress.html">Aeropress</a></li>
+            </ul>
+    </div>
+
+    <!-- Navigation with different brewing methods   
     <nav>
         <h3>Choose your method:</h3>
         <ul class="menu">
@@ -29,6 +42,8 @@
             <li><a href="aeropress.html">Aeropress</a></li>
         </ul>
     </nav>
+
+    -->
 
 <!-- Dropdown with the amount of cups   -->
     <section id="cup-selector">
@@ -50,6 +65,9 @@
         <div class="recipe">
             <ul>
                 <li>
+                    <h3>Method: Coffee maker</h3>
+                </li>
+                <li>
                     <p>Insert the paper filter and rinse it through with hot water</p>
                 </li>
                 <li>
@@ -70,7 +88,13 @@
             </ul>
         </div>
     </section>
+<!-- Google maps   -->
+     <section class="googlemaps">
+         <h3>Best places to take a cup of coffee near Åre, Sweden.</h3> 
+            <div id="map">
 
+            </div>
+    </section>
 <!-- Footer with sign-up   -->
     <footer>
         <div class="newsletter">
@@ -83,7 +107,12 @@
             </p>
 
         </div>
+        
     </footer>
+     <script src="assets/js/maps.js"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMKzVpz_itm4xYB5Ot49JOfP6TBl-C_Oo&callback=initMap"></script>
     <script src="assets/js/coffeemakerscript.js"></script>
     <!-- Bootstrap Js code -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
