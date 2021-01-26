@@ -181,3 +181,4 @@ Code inspiration and help:
 * [Problems with loading scripts](https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null) 
 * [Timer fucntion](https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer)
 * Google Maps API from Code intitue Google maps course. 
+* Send Emails course from Code institue. 
