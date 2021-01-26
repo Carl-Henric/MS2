@@ -82,6 +82,11 @@
             </ul>
         </div>
     </section>
+    <section id="googlemaps">
+            <div id="map">
+
+            </div>
+    </section>
 
 <!-- Footer with sign-up   -->
     <footer>
@@ -96,6 +101,38 @@
 
         </div>
     </footer>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 6, 
+                center: {
+                    lat: 63.398579,
+                    lng: 13.085930, 
+                }
+            });
+            var labels = "ABCDEFGHIJKLMNOPQRSTUVXZ";
+
+            var locations = [
+                {   lat: 63.4004457034588,lng: 13.078126126982276 },
+                {   lat: 63.17675839781368,lng: 14.639903869743152 }
+            ];
+
+            var markers = locations.map(function(location, i){
+                return new google.maps.Marker({
+                    position: location, 
+                    label: labels [i % labels.length],
+                });
+            });
+
+            var markerCluster = new MarkerClusterer(map, markers, {
+                imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+            });
+            
+        }
+    </script>
+   <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMKzVpz_itm4xYB5Ot49JOfP6TBl-C_Oo&callback=initMap"></script>
     <script src="assets/js/script.js"></script>
     <!-- Bootstrap Js code -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
