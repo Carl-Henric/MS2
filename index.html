@@ -13,38 +13,27 @@
 </head>
 
 <body>
-<!-- Header with text logo   -->
-    <header> 
+    <!-- Header with text logo   -->
+    <header>
         <h1>
             <a href="index.html">How to <br />brew your <br>perfect coffee </a>
         </h1>
     </header>
 
-<!-- Dropdown method -->
+    <!-- Dropdown method -->
     <div class="dropdown">
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-            <i class="fas fa-long-arrow-alt-right"></i> Choose your method 
-        <span class="caret"></span>
+            <i class="fas fa-long-arrow-alt-right"></i> Choose your method
+            <span class="caret"></span>
         </button>
-            <ul class="dropdown-menu">
-                <li id="v60"><a href="index.html">V60</a></li>
-                <li id="coffeemaker"><a href="coffeemaker.html">Coffee maker</a></li>
-                <li id="aeropress"><a href="aeropress.html">Aeropress</a></li>
-            </ul>
-    </div>
-
-<!-- Navigation with different brewing methods  
-    <nav>
-        <h3>Choose your method:</h3>
-        <ul class="menu">
-            <li id="v60"><a href="index.html"><i class="fas fa-long-arrow-alt-right"></i> V60</a></li>
+        <ul class="dropdown-menu">
+            <li id="v60"><a href="index.html">V60</a></li>
             <li id="coffeemaker"><a href="coffeemaker.html">Coffee maker</a></li>
             <li id="aeropress"><a href="aeropress.html">Aeropress</a></li>
         </ul>
-    </nav>
- -->
- 
-<!-- Dropdown with the amount of cups   -->
+    </div>
+
+    <!-- Dropdown with the amount of cups   -->
     <section id="cup-selector">
         <!-- Tips from https://stackoverflow.com/questions/43671008/html-javascript-calling-a-function-with-drop-down-options-->
         <form>
@@ -59,7 +48,7 @@
         </form>
     </section>
 
-<!-- Content with brewing recipe   -->
+    <!-- Content with brewing recipe   -->
     <section id="howto">
         <div class="recipe">
             <ul>
@@ -100,18 +89,18 @@
         </div>
     </section>
 
-<!-- Google maps   -->
+    <!-- Google maps   -->
     <section class="googlemaps">
-        <h3>Best places to take a cup of coffee near Åre, Sweden.</h3>    
+        <h3>Best places to take a cup of coffee near Åre, Sweden.</h3>
         <div id="map">
 
-            </div>
+        </div>
     </section>
 
-<!-- Footer with sign-up   -->
+    <!-- Footer with sign-up   -->
     <footer>
         <div class="newsletter">
-            <h3>Sign up for more <br/>coffee wisdom</h3><input type="text" name="newsletter">
+            <h3>Sign up for more <br />coffee wisdom</h3><input type="text" name="newsletter">
             <input type="submit" name="submit">
         </div>
         <div class="contact">
@@ -123,7 +112,7 @@
     </footer>
     <script src="assets/js/maps.js"></script>
     <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-   <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMKzVpz_itm4xYB5Ot49JOfP6TBl-C_Oo&callback=initMap"></script>
     <script src="assets/js/script.js"></script>
     <!-- Bootstrap Js code -->
