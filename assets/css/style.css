@@ -1,8 +1,9 @@
 /* Google fonts ----------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+/* For the sign in the bottom of the footer */
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+/* Paragraphs and headers */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
+/* Header, Maps and newsletter font */
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 
 
@@ -15,12 +16,12 @@
 
 header {
     padding: 10px 5px 10px 5px;
-    background-color:skyblue;
-    
+    background-color: skyblue;
+
 }
 
 body {
-    background-color:lightsalmon;
+    background-color: lightsalmon;
     margin: auto;
     text-align: center;
 }
@@ -28,7 +29,7 @@ body {
 nav {
     padding: 20px 10px 20px 10px;
     width: 100%;
-    
+
 }
 
 .menu {
@@ -38,22 +39,20 @@ nav {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
 
-   
+
 }
 
 .menu a {
-   
+
     color: white;
 }
-
-
 
 li {
     display: inline;
 }
 
 .menu li:hover {
-    border-bottom: 2px dashed turquoise;
+    border-bottom: 2px dashed skyblue;
     padding-bottom: 5px;
     color: white;
 }
@@ -67,7 +66,7 @@ li {
 }
 
 footer {
-    background-color:#ffb294;
+    background-color: #ffb294;
     text-align: center;
     padding: 20px 5px 2px 0px;
     position: relative;
@@ -75,11 +74,11 @@ footer {
     left: 0;
     width: 100%;
     color: white;
-    
+
 }
 
 footer p {
-    font-family: 'Dancing Script', cursive;  
+    font-family: 'Dancing Script', cursive;
     padding-top: 20px;
     font-size: 10px;
     color: white;
@@ -134,14 +133,14 @@ button {
     border: 0.5px inset black;
     border-radius: 5px;
     color: rgb(8, 7, 7);
-        font-family: 'Source Sans Pro', sans-serif;
-        font-weight: 700;
-        font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
 
 }
 
 /* Solution for take away active color: https://stackoverflow.com/questions/49911051/how-to-change-button-active-color-in-bootstrap-4 */
-.btn-primary:not(:disabled):not(.disabled):focus{
+.btn-primary:not(:disabled):not(.disabled):focus {
     background-color: transparent;
     border: none;
 }
@@ -152,8 +151,8 @@ button {
 
 .dropdown-menu li {
     display: block;
-     text-align: center;
-     width: 230px;
+    text-align: center;
+    width: 250px;
 }
 
 .dropdown-toggle,
@@ -185,7 +184,7 @@ button {
 }
 
 #change_cups:hover {
-    background-color: cyan;
+    background-color: #9D5E48;
 }
 
 .recipe {
@@ -211,7 +210,7 @@ h1 a {
 }
 
 h1 a:hover {
-    color: cyan;
+    color: salmon;
     text-decoration-line: none;
 }
 
@@ -233,6 +232,7 @@ h3 {
         font-size: 20px;
     }
 
+    .dropdown-toggle,
     #cup-selector {
         font-size: 20px;
     }

@@ -1,4 +1,4 @@
-//For start timer fucntion, help from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer-->
+//For start timer fucntion, help from https://stackoverflow.com/questions/54637148/how-to-add-onclick-event-to-start-timer
 // Bloom countdown script-->
 // When page is loaded Help from: https://stackoverflow.com/questions/26107125/cannot-read-property-addeventlistener-of-null
 window.onload = function() {

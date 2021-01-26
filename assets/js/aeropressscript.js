@@ -99,4 +99,4 @@ window.onload = function() {
         } else return document.getElementById("bloom").innerHTML = "0";
 
     }
-}
+};

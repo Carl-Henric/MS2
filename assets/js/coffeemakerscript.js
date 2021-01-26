@@ -22,7 +22,7 @@ window.onload = function() {
         } else if (menu.value == "6") {
             return document.getElementById("coffeeweight").innerHTML = gramsofcoffee * 6;
         } else if (menu.value == "0") {
-            return document.getElementById("coffeeweight").innerHTML = "0"
+            return document.getElementById("coffeeweight").innerHTML = "0";
         }
     }
     // Converts grams of water for each cup
